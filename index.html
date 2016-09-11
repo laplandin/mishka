@@ -6,7 +6,123 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <img class="page-header__logo" src="" alt="" />
+      <a class="page-header__menu-button" href="#"></a>
+
+      <ul class="page-header__menu-list">
+        <li class="page-header__menu-item">Каталог товаров</li>
+        <li class="page-header__menu-item">Вязание на заказ</li>
+        <li class="page-header__menu-item">Поиск по сайту</li>
+        <li class="page-header__menu-item">Корзина:<span>пока пуста</span></li>
+      </ul>
+    </header>
+
+    <main class="main-content">
+      <section class="stock">
+        <div class="stock__title">
+          <h1>Милые штуки ручной работы для дома</h1>
+        </div>
+        <div class="stock__item">
+          <h2 class="stock__category"></h2>
+        </div>
+        <div class="stock__item">
+          <h2 class="stock__category"></h2>
+        </div>
+      </section>
+
+      <article class="goods-item">
+        <h2 class="goods-item__title">Вязанные корзинки</h2>
+        <h3 class="goods-item--good-of-week">Товар недели</h3>
+        <p class="goods-item__description">
+          "Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах"
+        </p>
+        <table class="goods-item__info">
+          <tr>
+            <td class="goods-item__property">Цвет:</td>
+            <td class="goods-item__value">"Тиффани"/серый</td>
+          </tr>
+          <tr>
+            <td class="goods-item__property">Диаметр:</td>
+            <td class="goods-item__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="goods-item__property">Высота:</td>
+            <td class="goods-item__value">15см</td>
+          </tr>
+          <img class="goods-item__pic" src="" alt="">
+        </table>
+
+        <section class="add-to-cart">
+          <h2 class="add-to-cart__title">Добавить в корзину</h2>
+          <p class="add-tocart__choose-size">
+            Выберите размер
+          </p>
+          <form class action="post">
+            <label for="">S<input name="add-to-cart--choose-size" type="radio"></label>
+            <label for="">M<input name="add-to-cart--choose-size" type="radio"></label>
+            <label for="">L<input name="add-to-cart--choose-size" type="radio"></label>
+          </form>
+          <button class="add-to-cart__add-btn add-btn" type="button" name="button">Добавить</button>
+        </section>
+      </article>
+
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">Экологически чистые материалы</li>
+          <li class="advantages__item">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item">Поддержка отечественного производителя</li>
+          <li class="advantages__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии я накупила аксессуаров в Мишке, и мои фотографии сразу стали более стильные,
+          а также набирают больше лайков!
+        </p>
+        <p class="reviews__author-name">Анастасия Красильникова</p>
+        <p class="reviews__author-mail">@misssssiskras</p>
+        <button class="reviews__toggle-prev" type="button" name="button"></button>
+        <button class="reviews__toggle-next" type="button" name="button"></button>
+        <a class="review__write-review btn" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <table class="contacts__list">
+          <tr>
+            <td class="contacts__item">e-mail</td>
+            <td class="contacts__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts__item">адрес</td>
+            <td class="contacts__value">г. Санкт-Петербург
+                                        ул.Большая Конюшенная,
+                                        д.19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class="contacts__map"></div>
+        <a class="contacts__write-us btn" href="">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="social-links">
+        <a class="social-link social-link--vk" href=""></a>
+        <a class="social-link social-link--fb" href=""></a>
+        <a class="social-link social-link--tw" href=""></a>
+      </section>
+      <section class="page-footer__copyright">
+        <p>
+          Разработано
+        </p>
+      </section>
+    </footer>
 
   </body>
 </html>
