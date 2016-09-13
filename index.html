@@ -11,24 +11,33 @@
       <a class="page-header__menu-button" href="#"></a>
 
       <ul class="page-header__menu-list">
-        <li class="page-header__menu-item">Каталог товаров</li>
-        <li class="page-header__menu-item">Вязание на заказ</li>
-        <li class="page-header__menu-item">Поиск по сайту</li>
-        <li class="page-header__menu-item">Корзина:<span>пока пуста</span></li>
+        <li class="page-header__menu-item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+        <li class="page-header__menu-item page-header__menu-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="page-header__menu-item page-header__menu-item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
       </ul>
     </header>
 
+    <div class="page-title page-title--index">
+      <h1>Милые штуки ручной работы для дома</h1>
+    </div>
+
     <main class="main-content">
       <section class="stock">
-        <div class="stock__title">
-          <h1>Милые штуки ручной работы для дома</h1>
-        </div>
-        <div class="stock__item">
-          <h2 class="stock__category"></h2>
-        </div>
-        <div class="stock__item">
-          <h2 class="stock__category"></h2>
-        </div>
+        <a class="stock__item stock__item--interior-icon">
+          <h2 class="stock__category">Предметы интерьера</h2>
+        </a>
+        <a class="stock__item stock__item--toy-icon">
+          <h2 class="stock__category">Детские игрушки</h2>
+        </a>
       </section>
 
       <article class="goods-item">
@@ -50,21 +59,12 @@
             <td class="goods-item__property">Высота:</td>
             <td class="goods-item__value">15см</td>
           </tr>
-          <img class="goods-item__pic" src="" alt="">
         </table>
-
-        <section class="add-to-cart">
-          <h2 class="add-to-cart__title">Добавить в корзину</h2>
-          <p class="add-tocart__choose-size">
-            Выберите размер
-          </p>
-          <form class action="post">
-            <label for="">S<input name="add-to-cart--choose-size" type="radio"></label>
-            <label for="">M<input name="add-to-cart--choose-size" type="radio"></label>
-            <label for="">L<input name="add-to-cart--choose-size" type="radio"></label>
-          </form>
-          <button class="add-to-cart__add-btn add-btn" type="button" name="button">Добавить</button>
-        </section>
+        <img class="goods-item__pic" src="" alt="">
+        <p>
+          Цена: 990 руб.
+        </p>
+        <button class="good-item__btn-order btn" type="button" name="button">Заказть</button>
       </article>
 
       <section class="advantages">
@@ -96,11 +96,11 @@
       <section class="contacts">
         <table class="contacts__list">
           <tr>
-            <td class="contacts__item">e-mail</td>
+            <td class="contacts__item">e-mail:</td>
             <td class="contacts__value">info@mimimishkashop.ru</td>
           </tr>
           <tr>
-            <td class="contacts__item">адрес</td>
+            <td class="contacts__item">адрес:</td>
             <td class="contacts__value">г. Санкт-Петербург
                                         ул.Большая Конюшенная,
                                         д.19/8, офис 101</td>
@@ -123,6 +123,22 @@
         </p>
       </section>
     </footer>
+
+    <section class="popup-add-to-cart">
+      <form class action="post">
+        <h2 class="popup-add-to-cart__title">Добавить в корзину</h2>
+        <p class="popup-add-tocart__choose-size">
+          Выберите размер
+        </p>
+        <label for="">S</label>
+        <label for="">M</label>
+        <label for="">L</label>
+        <input name="popup-add-to-cart--choose-size" type="radio" checked>
+        <input name="popup-add-to-cart--choose-size" type="radio">
+        <input name="popup-add-to-cart--choose-size" type="radio">
+        <button class="popup-add-to-cart__add-btn btn btn--add-to-cart" type="submit" name="button">Добавить</button>
+      </form>
+    </section>
 
   </body>
 </html>

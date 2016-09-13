@@ -1,9 +1,9 @@
 {
-  "name": "81547-mishka",
+  "name": "mishka",
   "version": "0.1.0",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
-  "author": "Алексей Устинов",
+  "author": "Денис Лапландин",
   "repository": {
     "type": "git",
     "url": "git@github.com:htmlacademy-adaptive/81547-mishka.git"

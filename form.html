@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mishka-form</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-logo" href="index.html">
+        <img class="page-header__logo" src="" alt="" />
+      </a>
+      <a class="page-header__menu-button" href="#"></a>
+
+      <ul class="page-header__menu-list">
+        <li class="page-header__menu-item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+        <li class="page-header__menu-item page-header__menu-item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="page-header__menu-item page-header__menu-item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="page-title page-title--catalog">
+      <h1>Вязание на заказ</h1>
+    </div>
+
+    <form class="order-form" action="post">
+    <p class="order-form__description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+      заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
+    <div class="order-form__type">
+      <h3>Тип</h3>
+      <label class="order-form__type-label"><input type="radio" name="type" value="" checked>Аксессуар для интерьера</label>
+      <label class="order-form__type-label"><input type="checkbox" name="type" value="">Детская игрушка</label>
+    </div>
+    <div class="order-form__color">
+      <h3>Цвет</h3>
+      <label class="order-form__color-label"><input type="checkbox" name="color">Белый</label>
+      <label class="order-form__color-label"><input type="checkbox" name="color">Серый</label>
+      <label class="order-form__color-label"><input type="checkbox" name="color">"Тиффани"</label>
+      <label class="order-form__color-label"><input type="checkbox" name="color">Черный</label>
+      <label class="order-form__color-label"><input type="checkbox" name="color">Розовый</label>
+      <label class="order-form__color-label"><input type="checkbox" name="color">Оранжевый</label>
+    </div>
+    <div class="order-form__name">
+      <h3>ФИО</h3>
+      <label class="order-form__name-label">Имя:<input type="text" placeholde="Введите ваше имя"></label>
+      <label class="order-form__name-label">Фамилия:<input type="text" placeholde="Укажите фамилию"></label>
+      <label class="order-form__name-label">Отчество:<input type="text" placeholde="Отчество, если пожелаете"></label>
+    </div>
+    <h3>Тел</h3>
+    <input class="order-form__tel" type="tel" name="tel" value="" placeholder="+7 XXX XX XX">
+    <h3>e-mail</h3>
+    <input class="order-form__email" type="email" name="tel" value="" placeholder="Ваш Email">
+    <h3>Доп</h3>
+    <textarea name="order-form__wishes" rows="8" cols="40"></textarea>
+    <p>
+      Все поля обязательны для заполнения
+    </p>
+    <button class="order-form__submit btn" type="submit" name="order-form__submit">Отправить заказ</button>
+    </form>
+
+    <footer class="page-footer">
+      <section class="social-links">
+        <a class="social-link social-link--vk" href=""></a>
+        <a class="social-link social-link--fb" href=""></a>
+        <a class="social-link social-link--tw" href=""></a>
+      </section>
+      <section class="page-footer__copyright">
+        <p>
+          Разработано
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
