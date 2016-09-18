@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet"> -->
   </head>
   <body>
 
     <header class="page-header">
-      <img class="page-header__logo" src="" alt="" />
-      <a class="page-header__menu-button" href="#"></a>
-
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
+        <a class="page-header__menu-button" href="#"><span class="invisible">Меню</span></a>
+      </div>
       <ul class="page-header__menu-list">
         <li class="page-header__menu-item">
           <a href="#">Каталог товаров</a>
@@ -27,7 +30,7 @@
     </header>
 
     <div class="page-title page-title--index">
-      <h1>Милые штуки ручной работы для дома</h1>
+      <h1>Милые штуки ручной <br> работы для дома</h1>
     </div>
 
     <main class="main-content">
@@ -41,15 +44,15 @@
       </section>
 
       <article class="goods-item">
-        <h2 class="goods-item__title">Вязанные корзинки</h2>
-        <h3 class="goods-item--good-of-week">Товар недели</h3>
+        <h2 class="goods-item__title">Вязаные корзинки</h2>
+        <h3 class="goods-item__good-of-week">Товар недели</h3>
         <p class="goods-item__description">
-          "Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах"
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
         </p>
         <table class="goods-item__info">
           <tr>
             <td class="goods-item__property">Цвет:</td>
-            <td class="goods-item__value">"Тиффани"/серый</td>
+            <td class="goods-item__value">&laquo;Тиффани&raquo;/серый</td>
           </tr>
           <tr>
             <td class="goods-item__property">Диаметр:</td>
@@ -57,68 +60,72 @@
           </tr>
           <tr>
             <td class="goods-item__property">Высота:</td>
-            <td class="goods-item__value">15см</td>
+            <td class="goods-item__value">15 см</td>
           </tr>
         </table>
-        <img class="goods-item__pic" src="" alt="">
-        <p>
+        <img class="goods-item__pic" src="../img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        <p class="goods-item__price">
           Цена: 990 руб.
         </p>
-        <button class="good-item__btn-order btn" type="button" name="button">Заказть</button>
+        <button class="goods-item__btn-order btn" type="button" name="button">Заказать</button>
       </article>
 
       <section class="advantages">
-        <h2 class="advantages__title">Коротко о нас</h2>
+        <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">Экологически чистые материалы</li>
-          <li class="advantages__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item">Поддержка отечественного производителя</li>
-          <li class="advantages__item">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item advantages__item--eco-icon">Экологически <br> чистые материалы</li>
+          <li class="advantages__item advantages__item--price-icon">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="advantages__item advantages__item--like-icon">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="advantages__item advantages__item--love-icon">Связано вручную с <br>любовью и&nbsp;умилением</li>
+          <li class="advantages__item advantages__item--produce-icon">Поддержка отечественного производителя</li>
+          <li class="advantages__item advantages__item--gift-icon">Поставляется в <br>подарочной упаковке</li>
         </ul>
       </section>
 
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <p class="reviews__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-          инстамамочек. В отчаянии я накупила аксессуаров в Мишке, и мои фотографии сразу стали более стильные,
-          а также набирают больше лайков!
+          Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильнее,
+          а&nbsp;также набирают больше лайков!
         </p>
-        <p class="reviews__author-name">Анастасия Красильникова</p>
-        <p class="reviews__author-mail">@misssssiskras</p>
-        <button class="reviews__toggle-prev" type="button" name="button"></button>
-        <button class="reviews__toggle-next" type="button" name="button"></button>
-        <a class="review__write-review btn" href="#">Написать</a>
+        <p class="reviews__author-name">Анастасия Красильникова <br><span>@misssssiskras</span></p>
+        <div class="reviews__toggle-wrapper">
+          <a class="reviews__toggle reviews__toggle--prev" href="#"><span class="invisible">Предыдущий отзыв</span></a>
+          <a class="reviews__toggle reviews__toggle--next" href="#"><span class="invisible">Следующий отзыв</span></a>
+        </div>
+        <a class="review__write-review btn" href="#">Написать <span class="invisible">отзыв</span></a>
       </section>
 
       <section class="contacts">
-        <table class="contacts__list">
-          <tr>
-            <td class="contacts__item">e-mail:</td>
-            <td class="contacts__value">info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td class="contacts__item">адрес:</td>
-            <td class="contacts__value">г. Санкт-Петербург
-                                        ул.Большая Конюшенная,
-                                        д.19/8, офис 101</td>
-          </tr>
-        </table>
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__list">
+          <div class="contacts__list-line">
+            <span class="contacts__item">e-mail:</span>
+            <span class="contacts__value contacts__item--underline">info@mimimishkashop.ru</span>
+          </div>
+          <div class="contacts__list-line">
+            <span class="contacts__item">адрес:</span>
+            <span class="contacts__value">г. Санкт-Петербург, <br>
+                                        ул. Большая Конюшенная,<br>
+                                        д. 19/8, офис 101</span>
+          </div>
+        </div>
         <div class="contacts__map"></div>
         <a class="contacts__write-us btn" href="">Напишите нам</a>
       </section>
     </main>
 
     <footer class="page-footer">
-      <section class="social-links">
-        <a class="social-link social-link--vk" href=""></a>
-        <a class="social-link social-link--fb" href=""></a>
-        <a class="social-link social-link--tw" href=""></a>
+      <section class="page-footer__section">
+        <div class="social-links">
+          <a class="social-link social-link--vk" href="">vk</a>
+          <a class="social-link social-link--fb" href="">fb</a>
+          <a class="social-link social-link--tw" href="">tw</a>
+        </div>
       </section>
-      <section class="page-footer__copyright">
-        <p>
+      <section class="page-footer__section">
+        <p class="page-footer__copyright">
           Разработано
         </p>
       </section>
@@ -130,12 +137,9 @@
         <p class="popup-add-tocart__choose-size">
           Выберите размер
         </p>
-        <label for="">S</label>
-        <label for="">M</label>
-        <label for="">L</label>
-        <input name="popup-add-to-cart--choose-size" type="radio" checked>
-        <input name="popup-add-to-cart--choose-size" type="radio">
-        <input name="popup-add-to-cart--choose-size" type="radio">
+        <label>S<input name="popup-add-to-cart--choose-size" type="radio" checked></label>
+        <label>M<input name="popup-add-to-cart--choose-size" type="radio"></label>
+        <label>L<input name="popup-add-to-cart--choose-size" type="radio"></label>
         <button class="popup-add-to-cart__add-btn btn btn--add-to-cart" type="submit" name="button">Добавить</button>
       </form>
     </section>

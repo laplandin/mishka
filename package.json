@@ -1,9 +1,9 @@
 {
-  "name": "mishka",
+  "name": "81547-mishka",
   "version": "0.1.0",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
-  "author": "Денис Лапландин",
+  "author": "Алексей Устинов",
   "repository": {
     "type": "git",
     "url": "git@github.com:htmlacademy-adaptive/81547-mishka.git"
@@ -13,11 +13,27 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/81547-mishka",
   "devDependencies": {
-    "lintspaces-cli": "0.4.0"
+    "autoprefixer": "6.4.1",
+    "browser-sync": "2.15.0",
+    "gulp": "3.9.1",
+    "gulp-less": "3.1.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "@htmlacademy/editorconfig-cli": "0.0.7"
   },
   "scripts": {
-    "test": "lintspaces -e .editorconfig -i 'js-comments' -i 'html-comments' *.html {less,sass,postcss}/*.* {less,sass,postcss}/**/*.* *.{js,json} js/*.{js,json} js/**/*.{js,json}"
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
   },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
   "engines": {
     "node": "6.5"
   }
