@@ -1,18 +1,27 @@
 .page-header {
   .container();
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+
   box-sizing: border-box;
+  // background-color: white;
+  border-bottom: 1px solid #cecece;
+
 }
 
 .page-header__logo-wrapper {
   position: relative;
-  height: 80px;
-  padding: 22px 0;
+
+  display: inline-block;
+  line-height: 80px;
   text-align: center;
 
-  border-bottom: 1px solid #cecece;
-
   box-sizing: border-box;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .page-header__logo {
@@ -22,22 +31,51 @@
 .page-header__menu-button {
   position: absolute;
   display: block;
-  top: 28px;
+  top: 38px;
   right:30px;
 
   width: 22px;
-  height: 22px;
+  height: 2px;
 
-  background-color: grey;
+  background-color: black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -6px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: black;
+  }
+
 }
 
 .page-header__menu-list {
   .list-break();
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 81px;
+  width: 320px;
   display: none;
 }
 
 .page-header__menu-item {
-  display: block;
   height: 79px;
 
   font-size: 17px;
@@ -46,9 +84,44 @@
   border-bottom: 1px solid #cecece;
   box-sizing: border-box;
 
+  background-color: white;
+
   a {
     padding-left: 76px;
     vertical-align: middle;
     line-height: 78px;
+  }
+}
+
+@media @tablet-widths {
+  .page-header {
+    min-height: 88px;
+
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 0;
+    line-height: 88px;
+  }
+
+  .page-header__menu-button {
+    display: none;
+  }
+
+  .page-header__menu-list {
+    position: static;
+    flex-direction: row;
+    width: auto;
+
+  }
+
+  .page-header__menu-item {
+    a {
+      padding-left: 0;
+      vertical-align: baseline;
+      line-height: 0;
+    }
   }
 }

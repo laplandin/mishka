@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-logo" href="index.html">
-        <img class="page-header__logo" src="" alt="" />
-      </a>
-      <a class="page-header__menu-button" href="#"></a>
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
+        <a class="page-header__menu-button" href="#"><span class="invisible">Меню</span></a>
+      </div>
 
       <ul class="page-header__menu-list">
         <li class="page-header__menu-item">
@@ -36,67 +36,90 @@
       <article class="catalog-item">
         <a href="">
           <figure class="catalog-item__view">
-            <img src="" alt="" width="260" height="200" />
+            <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195" />
             <figcaption class="catalog-item__name">
               <h3>Зайчик-попрыгайчик</h3>
-              <p class="catalog-item__info">Рост 30см, вес 200 г</p>
+              <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
+              <p class="catalog-item__price">1 200 руб.</p>
             </figcaption>
           </figure>
-          <p class="catalog-item__price">1 200 руб.</p>
+
         </a>
       </article>
 
       <article class="catalog-item">
         <a href="">
           <figure class="catalog-item__view">
-            <img src="" alt="" width="260" height="200" />
+            <img src="" alt="" width="260" height="195" />
             <figcaption class="catalog-item__name">
               <h3>Корзинка для белья</h3>
-              <p class="catalog-item__info">Диаметр 15см, высота 10 см</p>
+              <p class="catalog-item__info">Диаметр 15 см, высота 10 см</p>
+              <p class="catalog-item__price">690 руб.</p>
             </figcaption>
           </figure>
-          <p class="catalog-item__price">690 руб.</p>
         </a>
       </article>
 
       <article class="catalog-item">
         <a href="">
           <figure class="catalog-item__view">
-            <img src="" alt="" width="260" height="200" />
+            <img src="" alt="" width="260" height="195" />
             <figcaption class="catalog-item__name">
               <h3>Большая корзинка для игрушек</h3>
               <p class="catalog-item__info">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog-item__price">1 500 руб.</p>
             </figcaption>
           </figure>
-          <p class="catalog-item__price">1 500 руб.</p>
         </a>
       </article>
 
       <article class="item-making">
         <h3 class="item-making__title">Процесс производства</h3>
-        <video class="item-making__video" src="videofile.ogg" autoplay poster="posterimage.jpg">
+        <video class="item-making__video" src="videofile.ogg" autoplay poster="posterimage.jpg" width="260" height="150">
 
         </video>
-        <p>
+        <p class="item-making__video-description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о том, как появляются наши товары.
         </p>
-        <a class="make-order btn" href="#">Сделать заказ</a>
+        <a class="item-making__make-order btn" href="#">Сделать заказ</a>
       </article>
     </main>
 
     <footer class="page-footer">
-      <section class="social-links">
-        <a class="social-link social-link--vk" href=""></a>
-        <a class="social-link social-link--fb" href=""></a>
-        <a class="social-link social-link--tw" href=""></a>
+      <section class="page-footer__section">
+        <div class="social-links">
+          <a class="social-link social-link--vk" href="">vk</a>
+          <a class="social-link social-link--fb" href="">fb</a>
+          <a class="social-link social-link--tw" href="">tw</a>
+        </div>
       </section>
-      <section class="page-footer__copyright">
-        <p>
+      <section class="page-footer__section">
+        <p class="page-footer__copyright">
           Разработано
         </p>
       </section>
     </footer>
+
+    <div class="overlay"></div>
+
+    <section class="popup-add-to-cart">
+      <form class="popup-add-to-cart__form" action="post">
+        <h2 class="popup-add-to-cart__title">Добавить в корзину</h2>
+        <p class="popup-add-to-cart__choose-size">
+          Выберите размер:
+        </p>
+        <div class="popup-add-to-cart__size-choose-wrapper">
+          <input id="size-small" name="popup-add-to-cart__radio" type="radio" checked>
+          <label class="popup-add-to-cart__size-toggle" for="size-small">S</label>
+          <input id="size-middle" name="popup-add-to-cart__radio" type="radio">
+          <label class="popup-add-to-cart__size-toggle" for="size-middle">M</label>
+          <input id="size-large" name="popup-add-to-cart__radio" type="radio">
+          <label class="popup-add-to-cart__size-toggle" for="size-large">L</label>
+        </div>
+        <button class="popup-add-to-cart__add-btn btn btn--add-to-cart" type="submit" name="button">Добавить</button>
+      </form>
+    </section>
 
   </body>
 </html>
