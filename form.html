@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Mishka-form</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-logo" href="index.html">
-        <img class="page-header__logo" src="" alt="" />
-      </a>
-      <a class="page-header__menu-button" href="#"></a>
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
+        <a class="page-header__menu-button" href="#"><span class="invisible">Меню</span></a>
+      </div>
 
       <ul class="page-header__menu-list">
         <li class="page-header__menu-item">
@@ -28,7 +29,7 @@
       </ul>
     </header>
 
-    <div class="page-title page-title--catalog">
+    <div class="page-title page-title--form">
       <h1>Вязание на заказ</h1>
     </div>
 
@@ -37,46 +38,64 @@
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
       заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
-    <div class="order-form__type">
-      <h3>Тип</h3>
-      <label class="order-form__type-label"><input type="radio" name="type" value="" checked>Аксессуар для интерьера</label>
-      <label class="order-form__type-label"><input type="radio" name="type" value="">Детская игрушка</label>
-    </div>
-    <div class="order-form__color">
-      <h3>Цвет</h3>
-      <label class="order-form__color-label"><input type="checkbox" name="color">Белый</label>
-      <label class="order-form__color-label"><input type="checkbox" name="color">Серый</label>
-      <label class="order-form__color-label"><input type="checkbox" name="color">"Тиффани"</label>
-      <label class="order-form__color-label"><input type="checkbox" name="color">Черный</label>
-      <label class="order-form__color-label"><input type="checkbox" name="color">Розовый</label>
-      <label class="order-form__color-label"><input type="checkbox" name="color">Оранжевый</label>
-    </div>
-    <div class="order-form__name">
-      <h3>ФИО</h3>
-      <label class="order-form__name-label">Имя:<input type="text" placeholde="Введите ваше имя"></label>
-      <label class="order-form__name-label">Фамилия:<input type="text" placeholde="Укажите фамилию"></label>
-      <label class="order-form__name-label">Отчество:<input type="text" placeholde="Отчество, если пожелаете"></label>
-    </div>
-    <h3>Тел</h3>
-    <input class="order-form__tel" type="tel" name="tel" value="" placeholder="+7 XXX XX XX">
-    <h3>e-mail</h3>
-    <input class="order-form__email" type="email" name="tel" value="" placeholder="Ваш Email">
-    <h3>Доп</h3>
-    <textarea name="order-form__wishes" rows="8" cols="40"></textarea>
-    <p>
+
+    <fieldset class="order-form__fieldset">
+      <legend class="order-form__title">Тип</legend>
+      <input id="radio-type-interior" type="radio" name="type" value="" checked>
+      <label for="radio-type-interior" class="order-form__type-label">Аксессуар для интерьера</label>
+      <input id="radio-type-toys" type="radio" name="type" value="">
+      <label for="radio-type-toys" class="order-form__type-label">Детская игрушка</label>
+    </fieldset>
+
+    <fieldset class="order-form__fieldset">
+      <legend class="order-form__title">Цвет</legend>
+      <input id="checkbox-color-white" type="checkbox" name="color">
+      <label for="checkbox-color-white" class="order-form__color-label">Белый</label>
+      <input id="checkbox-color-grey" type="checkbox" name="color">
+      <label for="checkbox-color-grey" class="order-form__color-label">Серый</label>
+      <input id="checkbox-color-tiffany" type="checkbox" name="color">
+      <label for="checkbox-color-tiffany" class="order-form__color-label">&laquo;Тиффани&raquo;</label>
+      <input id="checkbox-color-black" type="checkbox" name="color">
+      <label for="checkbox-color-black" class="order-form__color-label">Черный</label>
+      <input id="checkbox-color-pink" type="checkbox" name="color">
+      <label for="checkbox-color-pink" class="order-form__color-label">Розовый</label>
+      <input id="checkbox-color-orange" type="checkbox" name="color">
+      <label for="checkbox-color-orange" class="order-form__color-label">Оранжевый</label>
+    </fieldset>
+    <fieldset class="order-form__fieldset">
+      <legend class="order-form__title">ФИО</legend>
+      <label class="order-form__name-label">Имя:<input class="order-form__input-text" type="text" placeholder="Введите ваше имя"></label>
+      <label class="order-form__name-label">Фамилия:<input class="order-form__input-text" type="text" placeholder="Укажите фамилию"></label>
+      <label class="order-form__name-label">Отчество:<input class="order-form__input-text" type="text" placeholder="Отчество, если пожелаете"></label>
+    </fieldset>
+    <fieldset class="order-form__fieldset order-form__fieldset--tel">
+      <legend class="order-form__title">Тел</legend>
+      <input class="order-form__input-text order-form__input-text--tel" type="tel" name="tel" value="" placeholder="+7 XXX XX XX">
+    </fieldset>
+    <fieldset class="order-form__fieldset order-form__fieldset--mail">
+      <legend class="order-form__title">e-mail</legend>
+      <input class="order-form__input-text order-form__input-text--mail" type="email" name="tel" value="" placeholder="Ваш Email">
+    </fieldset>
+    <fieldset class="order-form__fieldset">
+      <legend class="order-form__title">Доп</legend>
+      <textarea class="order-form__wishes" name="order-form__wishes" rows="4" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    </fieldset>
+    <p class="order-form__required">
       Все поля обязательны для заполнения
     </p>
     <button class="order-form__submit btn" type="submit" name="order-form__submit">Отправить заказ</button>
     </form>
 
     <footer class="page-footer">
-      <section class="social-links">
-        <a class="social-link social-link--vk" href=""></a>
-        <a class="social-link social-link--fb" href=""></a>
-        <a class="social-link social-link--tw" href=""></a>
+      <section class="page-footer__section">
+        <div class="social-links">
+          <a class="social-link social-link--vk" href="">vk</a>
+          <a class="social-link social-link--fb" href="">fb</a>
+          <a class="social-link social-link--tw" href="">tw</a>
+        </div>
       </section>
-      <section class="page-footer__copyright">
-        <p>
+      <section class="page-footer__section">
+        <p class="page-footer__copyright">
           Разработано
         </p>
       </section>
