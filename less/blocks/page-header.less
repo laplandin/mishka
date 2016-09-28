@@ -1,16 +1,15 @@
 .page-header {
   .container();
-  display: flex;
-  flex-direction: column;
-
+  position: relative;
   box-sizing: border-box;
-  // background-color: white;
+  background-color: white;
   border-bottom: 1px solid #cecece;
 
 }
 
 .page-header__logo-wrapper {
   position: relative;
+  width: 100%;
 
   display: inline-block;
   line-height: 80px;
@@ -87,14 +86,15 @@
   display: flex;
   flex-direction: column;
   top: 81px;
-  width: 320px;
+  width: 100%;
+
 
   &--closed {
     display: none;
   }
 
   &--opened {
-    display: block;
+    display: flex;
   }
 
 }
@@ -119,15 +119,17 @@
 
 @media @tablet-widths {
   .page-header {
-    min-height: 88px;
+    padding: 0 48px;
+    height: 89px;
 
-    flex-direction: row;
-    align-items: center;
+    box-sizing: border-box;
   }
 
   .page-header__logo-wrapper {
-    padding: 0;
+    float: left;
     line-height: 88px;
+    float: left;
+    width: auto;
   }
 
   .page-header__menu-button {
@@ -135,17 +137,65 @@
   }
 
   .page-header__menu-list {
+    // height: 88px;
+    width: 557px;
     position: static;
+    display: flex;
     flex-direction: row;
-    width: auto;
-
+    flex-wrap: wrap;
   }
 
   .page-header__menu-item {
+    display: block;
+    height: 88px;
+
+    border: none;
+
     a {
       padding-left: 0;
       vertical-align: baseline;
       line-height: 0;
     }
+  }
+
+  .page-header__menu-item:first-child {
+    order: 3;
+    margin-left: -85px;
+    width: 168px;
+    height: 35px;
+    padding-top: 18px;
+
+    .font(@font-bold, 15px, 24px);
+
+    background-color: transparent;
+
+  }
+
+  .page-header__menu-item:nth-child(2) {
+    order: 4;
+    width: 168px;
+    height: 35px;
+    padding-top: 18px;
+
+    .font(@font-bold, 15px, 24px);
+
+    background-color: transparent;
+  }
+
+  .page-header__menu-item:nth-child(3) {
+    order: 1;
+    width: 84px;
+    margin-left: 208px;
+
+    border-left: 1px solid #cecece;
+    box-sizing: border-box;
+  }
+
+  .page-header__menu-item:last-child {
+    order: 2;
+    width: 265px;
+
+    border-left: 1px solid #cecece;
+    box-sizing: border-box;
   }
 }
