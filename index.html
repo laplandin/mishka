@@ -48,30 +48,36 @@
       </section>
 
       <article class="goods-item">
-        <h2 class="goods-item__title">Вязаные корзинки</h2>
-        <h3 class="goods-item__good-of-week">Товар недели</h3>
-        <p class="goods-item__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
-        </p>
-        <table class="goods-item__info">
-          <tr>
-            <td class="goods-item__property">Цвет:</td>
-            <td class="goods-item__value">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <td class="goods-item__property">Диаметр:</td>
-            <td class="goods-item__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="goods-item__property">Высота:</td>
-            <td class="goods-item__value">15 см</td>
-          </tr>
-        </table>
+        <div class="goods-item__headers-wrapper">
+          <h2 class="goods-item__title">Вязаные корзинки</h2>
+          <h3 class="goods-item__good-of-week">Товар недели</h3>
+        </div>
+        <div class="goods-item__info-wrapper">
+          <p class="goods-item__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
+          </p>
+          <table class="goods-item__info">
+            <tr>
+              <td class="goods-item__property">Цвет:</td>
+              <td class="goods-item__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr>
+              <td class="goods-item__property">Диаметр:</td>
+              <td class="goods-item__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="goods-item__property">Высота:</td>
+              <td class="goods-item__value">15 см</td>
+            </tr>
+          </table>
+        </div>
         <img class="goods-item__pic" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-        <p class="goods-item__price">
-          Цена: 990 руб.
-        </p>
-        <button class="goods-item__btn-order btn" type="button" name="button">Заказать</button>
+        <div class="goods-item__price-wrapper">
+          <p class="goods-item__price">
+            Цена: 990 руб.
+          </p>
+          <button class="goods-item__btn-order btn" type="button" name="button">Заказать</button>
+        </div>
       </article>
 
       <section class="advantages">
@@ -98,17 +104,17 @@
           <a class="reviews__toggle reviews__toggle--prev" href="#"><span class="invisible">Предыдущий отзыв</span></a>
           <a class="reviews__toggle reviews__toggle--next" href="#"><span class="invisible">Следующий отзыв</span></a>
         </div>
-        <a class="review__write-review btn" href="#">Написать <span class="invisible">отзыв</span></a>
+        <a class="reviews__write-review btn" href="#">Написать <span class="invisible">отзыв</span></a>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__list">
-          <div class="contacts__list-line">
-            <span class="contacts__item">e-mail:</span>
+          <div class="contacts__list-block">
+            <span class="contacts__item">e - mail:</span>
             <span class="contacts__value contacts__item--underline">info@mimimishkashop.ru</span>
           </div>
-          <div class="contacts__list-line">
+          <div class="contacts__list-block">
             <span class="contacts__item">адрес:</span>
             <span class="contacts__value">г. Санкт-Петербург, <br>
                                         ул. Большая Конюшенная,<br>
@@ -116,11 +122,12 @@
           </div>
         </div>
         <div class="contacts__map"></div>
-        <a class="contacts__write-us btn" href="">Напишите нам</a>
+        <a class="contacts__write-to-us btn" href="">Напишите нам</a>
       </section>
     </main>
 
     <footer class="page-footer">
+      <img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="35" alt="Mishka"/>
       <section class="page-footer__section">
         <div class="social-links">
           <a class="social-link social-link--vk" href="">vk</a>
