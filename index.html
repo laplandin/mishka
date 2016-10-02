@@ -10,43 +10,46 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
+      <ul class="page-header__logo-wrapper">
         <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
         <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
-      </div>
-      <ul class="page-header__menu-list page-header__menu-list--opened">
-        <li class="page-header__menu-item">
+      </ul>
+      <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
+        <li class="page-header__menu-item-catalog">
           <a href="#">Каталог товаров</a>
         </li>
-        <li class="page-header__menu-item">
+        <li class="page-header__menu-item-knitting">
           <a href="#">Вязание на заказ</a>
         </li>
-        <li class="page-header__menu-item page-header__menu-item--search">
+      </ul>
+      <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
+        <li class="page-header__menu-item-search page-header__menu-item--search">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="page-header__menu-item page-header__menu-item--cart">
+        <li class="page-header__menu-item-cart page-header__menu-item--cart">
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+      <ul class="page-header__menu-list-new-sale">
+        <li class="page-header__menu-item-new">Новые поступления</li>
+        <li class="page-header__menu-item-sale">Распродажа</li>
+      </ul>
+      <ul class="page-header__free-shipping">
+        <li>Бесплатная доставка по России</li>
+      </ul>
     </header>
 
-    <div class="page-title page-title--index">
-      <p class="page-title__free-delivery">
-        Бесплатная доставка по России
-      </p>
-      <h1 class="page-title__title">Милые штуки ручной <br> работы для дома</h1>
-    </div>
+    <section class="stock stock--index">
+      <h1 class="stock__title">Милые штуки ручной <br> работы для дома</h1>
+      <a class="stock__item stock__item--interior-icon">
+        <h2 class="stock__category">Предметы интерьера</h2>
+      </a>
+      <a class="stock__item stock__item--toy-icon">
+        <h2 class="stock__category">Детские игрушки</h2>
+      </a>
+    </section>
 
     <main class="index-main">
-      <section class="stock">
-        <a class="stock__item stock__item--interior-icon">
-          <h2 class="stock__category">Предметы интерьера</h2>
-        </a>
-        <a class="stock__item stock__item--toy-icon">
-          <h2 class="stock__category">Детские игрушки</h2>
-        </a>
-      </section>
-
       <article class="goods-item">
         <div class="goods-item__headers-wrapper">
           <h2 class="goods-item__title">Вязаные корзинки</h2>
@@ -127,7 +130,7 @@
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="35" alt="Mishka"/>
+      <img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="35св" alt="Mishka"/>
       <section class="page-footer__section">
         <div class="social-links">
           <a class="social-link social-link--vk" href="">vk</a>

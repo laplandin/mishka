@@ -1,20 +1,28 @@
 .page-header {
   .container();
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
   background-color: white;
   border-bottom: 1px solid #cecece;
 
+  ul {
+
+  }
 }
 
 .page-header__logo-wrapper {
+  .list-break();
   position: relative;
   width: 100%;
 
   display: inline-block;
-  line-height: 80px;
+  line-height: 78px;
   text-align: center;
 
+  // border: 1px solid #cecece;
   box-sizing: border-box;
 
   img {
@@ -78,124 +86,119 @@
     }
   }
 }
-
-
-.page-header__menu-list {
+.page-header__menu-list-catalog-knitting,
+.page-header__menu-list-search-cart,
+.page-header__free-shipping {
   .list-break();
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 81px;
-  width: 100%;
-
-
-  &--closed {
-    display: none;
-  }
-
-  &--opened {
-    display: flex;
-  }
-
 }
 
-.page-header__menu-item {
-  height: 79px;
+.page-header__menu-list-catalog-knitting--closed,
+.page-header__menu-list-search-cart--closed {
+  display: none;
+}
 
-  font-size: 17px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+.page-header__menu-list-catalog-knitting--opened,
+.page-header__menu-list-search-cart--opened {
+  display: block;
+}
+
+.page-header__menu-item-catalog,
+.page-header__menu-item-knitting,
+.page-header__menu-item-search,
+.page-header__menu-item-cart {
+  padding-left: 75px;
+  min-height: 79px;
+
+  .font(@font-bold, 17px, 77px);
+  vertical-align: middle;
 
   border-bottom: 1px solid #cecece;
   box-sizing: border-box;
 
-  background-color: white;
+}
 
-  a {
-    padding-left: 76px;
-    vertical-align: middle;
-    line-height: 78px;
-  }
+.page-header__menu-list-new-sale,
+.page-header__free-shipping {
+  display: none;
 }
 
 @media @tablet-widths {
   .page-header {
     padding: 0 48px;
     height: 89px;
+    flex-direction: row;
+    align-items: flex-start;
 
     box-sizing: border-box;
   }
 
-  .page-header__logo-wrapper {
-    float: left;
-    line-height: 88px;
-    float: left;
-    width: auto;
+  .page-header__menu-list-catalog-knitting--closed,
+  .page-header__menu-list-search-cart--closed,
+  .page-header__free-shipping {
+    display: block;
   }
 
   .page-header__menu-button {
     display: none;
   }
 
-  .page-header__menu-list {
-    // height: 88px;
-    width: 557px;
-    position: static;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .page-header__logo-wrapper {
+    width: auto;
+    height: 89px;
+    margin-right: auto;
   }
 
-  .page-header__menu-item {
-    display: block;
-    height: 88px;
+  .page-header__menu-list-catalog-knitting {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    order: 3;
+    align-items: center;
+  }
+
+  .page-header__menu-list-search-cart {
+    display: flex;
+    order: 2;
+  }
+
+  .page-header__free-shipping {
+    display: flex;
+    order: 5;
+  }
+
+  .page-header__menu-item-search {
+    height: 89px;
+    width: 82px;
+
+    font-size: 0;
 
     border: none;
-
-    a {
-      padding-left: 0;
-      vertical-align: baseline;
-      line-height: 0;
-    }
-  }
-
-  .page-header__menu-item:first-child {
-    order: 3;
-    margin-left: -85px;
-    width: 168px;
-    height: 35px;
-    padding-top: 18px;
-
-    .font(@font-bold, 15px, 24px);
-
-    background-color: transparent;
-
-  }
-
-  .page-header__menu-item:nth-child(2) {
-    order: 4;
-    width: 168px;
-    height: 35px;
-    padding-top: 18px;
-
-    .font(@font-bold, 15px, 24px);
-
-    background-color: transparent;
-  }
-
-  .page-header__menu-item:nth-child(3) {
-    order: 1;
-    width: 84px;
-    margin-left: 208px;
-
     border-left: 1px solid #cecece;
-    box-sizing: border-box;
   }
 
-  .page-header__menu-item:last-child {
-    order: 2;
-    width: 265px;
-
+  .page-header__menu-item-cart {
+    height: 89px;
+    width: 264px;
+    border: none;
     border-left: 1px solid #cecece;
-    box-sizing: border-box;
+  }
+
+  .page-header__menu-item-catalog,
+  .page-header__menu-item-knitting {
+    width: 50%;
+    min-height: auto;
+    padding: 0;
+    .font(@font-bold, 15.3px, 24px);
+
+    border: none;
+  }
+
+  .page-header__free-shipping {
+    display: flex;
+    align-items: center;
+    min-height: 58px;
+    margin-left: auto;
+
+    .font(@font-normal, 15px, 24px);
   }
 }
