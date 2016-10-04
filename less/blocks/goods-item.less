@@ -1,5 +1,9 @@
 .goods-item {
-  padding: 28px 30px 36px;
+  // padding: 28px 30px 36px;
+  padding-top: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 36px;
 
   box-sizing: border-box;
 
@@ -67,10 +71,11 @@
 
 @media @tablet-widths {
   .goods-item {
-    margin-bottom: 75px;
-    padding: 0;
+    .container();
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 61px;
-
+    padding-bottom: 75px;
     .clearfix();
   }
 
@@ -131,9 +136,11 @@
 @media @desktop-widths {
   .goods-item {
     position: relative;
-    margin-bottom: 106px;
-    padding-left: 16.65%;
+
+    padding-left: 19.65%;
     padding-top: 139px;
+    padding-bottom: 106px;
+    
     display: flex;
     flex-wrap: wrap;
   }
@@ -149,7 +156,7 @@
 
   .goods-item__good-of-week {
     position: absolute;
-    left: 38px;
+    left: 88px;
     top: 154px;
     width: 90px;
   }
