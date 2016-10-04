@@ -51,7 +51,7 @@
   .reviews {
     margin-bottom: 96px;
     padding: 0;
-    padding-top: 77px;
+    padding-top: 78px;
 
     display: flex;
     flex-wrap: wrap;
@@ -94,5 +94,23 @@
     width: 174px;
     margin-left: auto;
 
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    padding-left: 16.6%;
+    padding-top: 86px;
+    // padding-right: 8%;
+  }
+
+  .reviews__title {
+    .font(@font-bold, 53px, 40px);
+    margin-bottom: 56px;
+  }
+
+  .reviews__text {
+    width: 88%;
+    margin-bottom: 38px;
   }
 }

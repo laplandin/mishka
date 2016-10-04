@@ -129,5 +129,49 @@
 }
 
 @media @desktop-widths {
+  .goods-item {
+    position: relative;
+    margin-bottom: 106px;
+    padding-left: 16.65%;
+    padding-top: 139px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .goods-item__headers-wrapper {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .goods-item__title {
+    .font(@font-bold, 53px, 57px);
+  }
+
+  .goods-item__good-of-week {
+    position: absolute;
+    left: 38px;
+    top: 154px;
+    width: 90px;
+  }
+
+  .goods-item__info-wrapper {
+    width: 33.4%;
+    margin-right: 66%;
+  }
+
+  .goods-item__description {
+    margin-bottom: 48px;
+  }
+
+  .goods-item__pic {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    z-index: -5;
+  }
+
+  .goods-item__price-wrapper {
+    width: 33.4%;
+    margin-top: 54px;
+  }
 }
