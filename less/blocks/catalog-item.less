@@ -76,5 +76,31 @@
 }
 
 @media @desktop-widths {
+  .catalog-item {
+    width: 30%;
+    display: flex;
+    a {
+      display: flex;
+      width: 100%;
+    }
+    // min-height: 600px;
+  }
+  .catalog-item__view {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
 
+
+    img {
+      width: 100%;
+      margin-bottom: 130px;
+    }
+  }
+
+  .catalog-item__name {
+    width: 100%;
+    min-height: 170px;
+    padding-right: 50px;
+    flex-grow: 1;
+  }
 }
