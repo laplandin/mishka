@@ -41,3 +41,40 @@
   .font(@font-bold, 15px, 70px);
   vertical-align: middle;
 }
+
+@media @tablet-widths {
+  .catalog-item__view {
+    display: flex;
+    margin-bottom: 24px;
+
+    img {
+      width: 50%;
+      height: 334px;
+    }
+  }
+
+  .catalog-item__name {
+    margin-top: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      .font(@font-bold, 20px, 24px);
+    }
+  }
+
+  .catalog-item__info {
+    .font(@font-normal, 15px, 30px);
+    margin-bottom: auto;
+  }
+
+  .catalog-item__price {
+    display: flex;
+    align-items: center;
+    .font(@font-bold, 17px, 24px);
+  }
+}
+
+@media @desktop-widths {
+
+}

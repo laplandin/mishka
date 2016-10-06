@@ -27,3 +27,33 @@
 
   box-sizing: border-box;
 }
+
+@media @tablet-widths {
+  .item-making {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-making__video {
+    order: -1;
+    width: 100%;
+    height: 456px;
+  }
+
+  .item-making__title {
+    margin-left: 105px;
+    padding-top: 38px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    .font(@font-bold, 20px, 24px);
+  }
+
+  .item-making__video-description {
+    margin: 0 40px;
+    .font(@font-normal, 15px, 30px);
+  }
+
+  .item-making__make-order {
+    margin: 36px 40px 46px;
+  }
+}
