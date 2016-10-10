@@ -11,20 +11,12 @@
   .font(@font-normal, 13px, 24px);
 }
 
-.order-form__fieldset {
-
-  &--color-select {
+.order-form__fieldset-color-select {
     margin-bottom: 20px;
-  }
+}
 
-  &--name {
-    margin-bottom: 26px;
-  }
-
-  &--tel {
-    margin-bottom: 20px;
-    // padding-top: 20px;
-  }
+.order-form__fieldset-color-tel {
+  margin-bottom: 20px;
 }
 
 .order-form__fieldset:last-of-type {
@@ -161,7 +153,7 @@ input[type="checkbox"] {
   }
 }
 
-.order-form__user-contacts {
+.order-form__fieldset-user-contacts {
   margin-bottom: 16px;
 }
 
@@ -179,14 +171,13 @@ input[type="checkbox"] {
   border-bottom: 2px solid black;
 }
 
-.order-form__fieldset--tel,
-.order-form__fieldset--mail {
+.order-form__fieldset-tel,
+.order-form__fieldset-mail {
 
   .order-form__headline {
+    // width: 25%;
     margin-bottom: 18px;
   }
-
-
 }
 
 .order-form__wishes {
@@ -205,7 +196,7 @@ input[type="checkbox"] {
   margin-top: 26px;
   margin-bottom: 28px;
 
-  .font(@font-normal, 14px, 5.24px)
+  .font(@font-normal, 14px, 5.24px);
 
   &--tablet {
     display: none;
@@ -218,9 +209,10 @@ input[type="checkbox"] {
 
 @media @tablet-widths {
   .order-form {
-    padding: 22px 50px 56px;
+    padding: 22px 0 56px;
   }
   .order-form__description {
+    padding: 0 50px;
     .font(@font-normal, 17px, 30px);
   }
 
@@ -238,31 +230,29 @@ input[type="checkbox"] {
 
   .order-form__fieldset {
     display: flex;
-    margin-top: 60px;
+    padding: 0 50px;
     margin-bottom: 0;
     padding-top: 0;
 
-    &--color-select {
-      min-height: 264px;
-    }
-
-    &--name {
-      margin-top: 52px;
-      min-height: 270px;
-      box-sizing: border-box;
-    }
-
-    &--tel, {
-      margin-top: 0;
-      margin-bottom: 26px;
-    }
-    &--mail {
-      margin-top: 0;
+    &:nth-of-type(even) {
+      background-color: #f1f1f1;
     }
   }
 
-  .order-form__type-select {
+  .order-form__fieldset-color-select {
+    min-height: 264px;
+    padding-top: 60px;
+  }
+
+  .order-form__fieldset-type-select {
     min-height: 178px;
+    margin-top: 60px;
+  }
+
+  .order-form__fieldset-name {
+    margin-top: 52px;
+    min-height: 270px;
+    box-sizing: border-box;
   }
 
   .order-form__headline {
@@ -341,9 +331,11 @@ input[type="checkbox"] {
     flex-grow: 1;
     padding-left: 17px;
     margin-bottom: 24px;
+
+    background-color: transparent;
   }
 
-  .order-form__user-contacts {
+  .order-form__fieldset-user-contacts {
     display: flex;
     flex-direction: column;
     padding-top: 56px;
@@ -352,11 +344,24 @@ input[type="checkbox"] {
     margin-bottom: 0;
   }
 
+  .order-form__fieldset-tel, {
+    display: flex;
+      margin-top: 0;
+      margin-bottom: 26px;
+  }
+
+  .order-form__fieldset-mail {
+    display: flex;
+      margin-top: 0;
+  }
+
   .order-form__input-text-tel,
   .order-form__input-text-mail {
     background-color: transparent;
     padding-top: 0;
-    padding-left: 60px;
+    padding-left: 15px;
+    width: 75%;
+    margin-left: auto;
 
     .font(@font-normal, 19px, 18px);
   }
@@ -365,6 +370,10 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    padding: 0 50px;
+  }
+  .order-form__fieldset-additionally {
+    padding-top: 60px;
   }
 
   .order-form__submit {
@@ -372,9 +381,14 @@ input[type="checkbox"] {
     margin-right: auto;
   }
 
+  .order-form__wishes {
+    width: 75%;
+  }
+
   .order-form__required {
     order: 1;
     margin: 0;
+
 
     .font(@font-normal, 17px, 30px);
 
