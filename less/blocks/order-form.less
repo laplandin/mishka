@@ -212,7 +212,7 @@ input[type="checkbox"] {
     padding: 22px 0 56px;
   }
   .order-form__description {
-    padding: 0 50px;
+    margin: 0 50px;
     .font(@font-normal, 17px, 30px);
   }
 
@@ -230,12 +230,11 @@ input[type="checkbox"] {
 
   .order-form__fieldset {
     display: flex;
-    padding: 0 50px;
-    margin-bottom: 0;
+    margin: 0 50px;
     padding-top: 0;
 
     &:nth-of-type(even) {
-      background-color: #f1f1f1;
+      // background-color: #f1f1f1;
     }
   }
 
@@ -328,9 +327,10 @@ input[type="checkbox"] {
 
   .order-form__input-text {
     width: 70%;
+    height: 50px;
     flex-grow: 1;
     padding-left: 17px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     background-color: transparent;
   }
@@ -361,6 +361,7 @@ input[type="checkbox"] {
     padding-top: 0;
     padding-left: 15px;
     width: 75%;
+    height: 48px;
     margin-left: auto;
 
     .font(@font-normal, 19px, 18px);
@@ -369,8 +370,9 @@ input[type="checkbox"] {
   .order-form__submit-wrapper {
     display: flex;
     align-items: center;
+
+    margin: 0 50px;
     margin-top: 50px;
-    padding: 0 50px;
   }
   .order-form__fieldset-additionally {
     padding-top: 60px;
@@ -389,7 +391,6 @@ input[type="checkbox"] {
     order: 1;
     margin: 0;
 
-
     .font(@font-normal, 17px, 30px);
 
     &--tablet {
@@ -400,5 +401,52 @@ input[type="checkbox"] {
       display: none;
     }
   }
+}
 
+@media @desktop-widths {
+  .order-form__description {
+    margin: 0 19.5%;
+  }
+
+  .order-form__headline {
+    width: 16.5%;
+    justify-content: center;
+  }
+
+  .order-form__title {
+    padding: 0;
+  }
+
+  .order-form__fieldset-color-select {
+    min-height: 188px;
+  }
+
+  .order-form__color-label {
+    width: 33.3333%;
+
+    &:nth-of-type(odd) {
+      width: 33.3333%;
+    }
+  }
+
+  .order-form__name-label {
+    margin-right: 26px;
+  }
+
+  .order-form__input-text {
+    margin-right: 11%;
+    width: 70%;
+  }
+
+  .order-form__input-text-tel,
+  .order-form__input-text-mail {
+    width: 65%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .order-form__submit-wrapper {
+    margin: 0 220px;
+    margin-top: 90px;
+  }
 }
