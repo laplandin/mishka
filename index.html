@@ -4,51 +4,56 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-
     <header class="page-header">
-      <ul class="page-header__logo-wrapper">
-        <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
-        <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
-      </ul>
-      <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
-        <li class="page-header__menu-item-catalog">
-          <a href="#">Каталог товаров</a>
-        </li>
-        <li class="page-header__menu-item-knitting">
-          <a href="#">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
-        <li class="page-header__menu-item-search page-header__menu-item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="page-header__menu-item-cart page-header__menu-item--cart">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <ul class="page-header__menu-list-new-sale">
-        <li class="page-header__menu-item-new">Новые поступления</li>
-        <li class="page-header__menu-item-sale">Распродажа</li>
-      </ul>
-      <ul class="page-header__free-shipping">
-        <li>Бесплатная доставка по России</li>
-      </ul>
+      <nav class="page-header__nav">
+        <ul class="page-header__logo-wrapper">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka">
+          </picture>
+          <!-- <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" /> -->
+          <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
+        </ul>
+        <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
+          <li class="page-header__menu-item-catalog">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="page-header__menu-item-knitting">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
+          <li class="page-header__menu-item-search page-header__menu-item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__menu-item-cart page-header__menu-item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="page-header__menu-list-new-sale">
+          <li class="page-header__menu-item-new">Новые поступления</li>
+          <li class="page-header__menu-item-sale">Распродажа</li>
+        </ul>
+        <ul class="page-header__free-shipping">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+      </nav>
     </header>
-
     <section class="stock stock--index">
-      <h1 class="stock__title">Милые штуки ручной <br> работы для дома</h1>
-      <a class="stock__item stock__item--interior-icon">
-        <h2 class="stock__category">Предметы интерьера</h2>
-      </a>
-      <a class="stock__item stock__item--toy-icon">
-        <h2 class="stock__category">Детские игрушки</h2>
-      </a>
+      <div class="stock__wrapper">
+        <h1 class="stock__title">Милые штуки ручной <br> работы для дома</h1>
+        <a class="stock__item stock__item--interior-icon">
+          <h2 class="stock__category">Предметы интерьера</h2>
+        </a>
+        <a class="stock__item stock__item--toy-icon">
+          <h2 class="stock__category">Детские игрушки</h2>
+        </a>
+      </div>
     </section>
-
     <main class="index-main">
       <article class="goods-item">
         <div class="goods-item__headers-wrapper">
@@ -57,7 +62,7 @@
         </div>
         <div class="goods-item__info-wrapper">
           <p class="goods-item__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах
           </p>
           <table class="goods-item__info">
             <tr>
@@ -74,7 +79,12 @@
             </tr>
           </table>
         </div>
-        <img class="goods-item__pic" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        <picture>
+          <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="goods-item__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+        </picture>
+
         <div class="goods-item__price-wrapper">
           <p class="goods-item__price">
             Цена: 990 руб.

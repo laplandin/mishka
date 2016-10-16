@@ -31,6 +31,14 @@
   box-sizing: border-box;
 }
 
+.item-making__video {
+  background-image: url("../img/video-mobile@1x.jpg");
+
+  @media @retina {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+}
+
 @media @tablet-widths {
   .item-making {
     display: flex;
@@ -59,6 +67,14 @@
 
   .item-making__make-order {
     margin: 36px 40px 46px;
+  }
+
+  .item-making__video {
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 }
 
@@ -94,5 +110,13 @@
   .item-making__make-order {
     width: 22%;
     margin: 48px 0;
+  }
+
+  .item-making__video {
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }

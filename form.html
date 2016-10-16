@@ -8,33 +8,39 @@
   </head>
   <body>
     <header class="page-header">
-      <ul class="page-header__logo-wrapper">
-        <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" />
-        <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
-      </ul>
-      <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
-        <li class="page-header__menu-item-catalog">
-          <a href="#">Каталог товаров</a>
-        </li>
-        <li class="page-header__menu-item-knitting">
-          <a href="#">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
-        <li class="page-header__menu-item-search page-header__menu-item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="page-header__menu-item-cart page-header__menu-item--cart">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <ul class="page-header__menu-list-new-sale">
-        <li class="page-header__menu-item-new">Новые поступления</li>
-        <li class="page-header__menu-item-sale">Распродажа</li>
-      </ul>
-      <ul class="page-header__free-shipping">
-        <li>Бесплатная доставка по России</li>
-      </ul>
+      <nav class="page-header__nav">
+        <ul class="page-header__logo-wrapper">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka">
+          </picture>
+          <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
+        </ul>
+        <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
+          <li class="page-header__menu-item-catalog">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="page-header__menu-item-knitting">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
+          <li class="page-header__menu-item-search page-header__menu-item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__menu-item-cart page-header__menu-item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="page-header__menu-list-new-sale">
+          <li class="page-header__menu-item-new">Новые поступления</li>
+          <li class="page-header__menu-item-sale">Распродажа</li>
+        </ul>
+        <ul class="page-header__free-shipping">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+      </nav>
     </header>
     <div class="page-title page-title--form">
       <h1>Вязание на заказ</h1>
