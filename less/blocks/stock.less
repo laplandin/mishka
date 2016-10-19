@@ -1,10 +1,11 @@
 .stock {
   width: 100%;
   background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
 }
 
 .stock__wrapper {
-  .container();
   display: flex;
   flex-direction: column;
 
@@ -58,7 +59,9 @@
 
 @media @tablet-widths {
   .stock__wrapper {
+
     min-height: 730px;
+    max-width: 1050px;
 
     flex-direction: row;
     flex-wrap: wrap;

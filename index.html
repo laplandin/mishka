@@ -15,7 +15,6 @@
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka">
           </picture>
-          <!-- <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" /> -->
           <a class="page-header__menu-button page-header__menu-button--closed" href="#"><span class="invisible">Меню</span></a>
         </ul>
         <ul class="page-header__menu-list-catalog-knitting page-header__menu-list-catalog-knitting--closed">
@@ -54,7 +53,8 @@
         </a>
       </div>
     </section>
-    <main class="index-main">
+    <!-- <main class="index-main"> -->
+    <section class="container">
       <article class="goods-item">
         <div class="goods-item__headers-wrapper">
           <h2 class="goods-item__title">Вязаные корзинки</h2>
@@ -92,7 +92,9 @@
           <button class="goods-item__btn-order btn" type="button" name="button">Заказать</button>
         </div>
       </article>
+    </section>
 
+    <div class="container">
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
@@ -104,41 +106,47 @@
           <li class="advantages__item advantages__item--gift-icon">Поставляется в <br>подарочной упаковке</li>
         </ul>
       </section>
+    </div>
 
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <p class="reviews__text">
-          Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных
-          инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильнее,
-          а&nbsp;также набирают больше лайков!
-        </p>
-        <p class="reviews__author-name">Анастасия Красильникова <br><span>@misssssiskras</span></p>
-        <div class="reviews__toggle-wrapper">
-          <a class="reviews__toggle reviews__toggle--prev" href="#"><span class="invisible">Предыдущий отзыв</span></a>
-          <a class="reviews__toggle reviews__toggle--next" href="#"><span class="invisible">Следующий отзыв</span></a>
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <p class="reviews__text">
+            Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у популярных
+            инстамамочек. В отчаянии, я&nbsp;накупила аксессуаров и игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильнее,
+            а&nbsp;также набирают больше лайков!
+          </p>
+          <p class="reviews__author-name">Анастасия Красильникова <br><span>@misssssiskras</span></p>
+          <div class="reviews__toggle-wrapper">
+            <a class="reviews__toggle reviews__toggle--prev" href="#"><span class="invisible">Предыдущий отзыв</span></a>
+            <a class="reviews__toggle reviews__toggle--next" href="#"><span class="invisible">Следующий отзыв</span></a>
+          </div>
+          <a class="reviews__write-review btn" href="#">Написать <span class="invisible">отзыв</span></a>
         </div>
-        <a class="reviews__write-review btn" href="#">Написать <span class="invisible">отзыв</span></a>
       </section>
-    </main>
 
-    <section class="contacts">
-      <div class="contacts__map"></div>
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__list">
-        <div class="contacts__list-block">
-          <span class="contacts__item">e-mail:</span>
-          <span class="contacts__value contacts__item--underline">info@mimimishkashop.ru</span>
-        </div>
-        <div class="contacts__list-block">
-          <span class="contacts__item">адрес:</span>
-          <span class="contacts__value">г. Санкт-Петербург, <br>
-                                      ул. Большая Конюшенная,<br>
-                                      д. 19/8, офис 101</span>
-        </div>
-      </div>
+    <!-- </main> -->
 
-      <a class="contacts__write-to-us btn" href="">Напишите нам</a>
-    </section>
+    <div class="container">
+      <section class="contacts">
+        <div class="contacts__map"></div>
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__list">
+          <div class="contacts__list-block">
+            <span class="contacts__item">e-mail:</span>
+            <span class="contacts__value contacts__item--underline">info@mimimishkashop.ru</span>
+          </div>
+          <div class="contacts__list-block">
+            <span class="contacts__item">адрес:</span>
+            <span class="contacts__value">г. Санкт-Петербург, <br>
+                                        ул. Большая Конюшенная,<br>
+                                        д. 19/8, офис 101</span>
+          </div>
+        </div>
+        <a class="contacts__write-to-us btn" href="">Напишите нам</a>
+      </section>
+    </div>
+
 
     <footer class="page-footer">
       <img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="35св" alt="Mishka"/>

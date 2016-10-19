@@ -1,5 +1,7 @@
 .advantages {
-  padding: 35px 30px 45px;
+  width: 260px;
+  padding: 35px 0 45px;
+  margin: 0 auto;
 
   box-sizing: border-box;
 
@@ -24,8 +26,8 @@
 
 @media @tablet-widths {
   .advantages {
-    .container();
-    padding: 0 50px;
+    margin: 0 auto;
+    width: 668px;
     padding-bottom: 28px;
     padding-top: 49px;
   }
@@ -52,10 +54,23 @@
 
 @media @desktop-widths {
   .advantages {
-    padding: 56px 19.7% 0;
+    width: 1050px;
+    padding: 56px 175px 0;
   }
 
   .advantages__title {
     .font(@font-bold, 53px, 57px);
+  }
+
+  .advantages__list {
+    height: 540px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+
+  .advantages__item:nth-child(n+4) {
+    width: 60%;
   }
 }
