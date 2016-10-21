@@ -13,18 +13,25 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/81547-mishka",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
     "gulp": "3.9.1",
+    "gulp-csso": "^2.0.0",
     "gulp-less": "3.1.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
-    "@htmlacademy/editorconfig-cli": "0.0.7"
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp style",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "copy": "gulp copy",
+    "symbols": "gulp symbols"
   },
   "editorconfig-cli": [
     "*.html",
