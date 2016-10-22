@@ -50,13 +50,22 @@
 
   .page-footer__logo {
     display: block;
+    width: 33.3333%;
   }
 
-  .page-footer__section:first-of-type {
+  .page-footer__section:nth-of-type(2) {
     border: none;
+    width: 33.3333%;
+    margin-right: auto;
   }
 
   .page-footer__copyright {
     line-height: 90px;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer {
+    width: 1050px;
   }
 }
