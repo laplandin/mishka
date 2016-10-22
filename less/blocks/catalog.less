@@ -1,0 +1,21 @@
+.catalog {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media @tablet-widths {
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog {
+    margin-bottom: 54px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -28,9 +28,15 @@
         <ul class="page-header__menu-list-search-cart page-header__menu-list-search-cart--closed">
           <li class="page-header__menu-item-search page-header__menu-item--search">
             <a href="#">Поиск по сайту</a>
+            <svg width="18" height="18">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-search"></use>
+            </svg>
           </li>
           <li class="page-header__menu-item-cart page-header__menu-item--cart">
             <a href="#">Корзина: пока пуста</a>
+            <svg width="20" height="19">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+            </svg>
           </li>
         </ul>
         <ul class="page-header__menu-list-new-sale">
@@ -45,9 +51,8 @@
     <div class="page-title page-title--catalog">
       <h1>Каталог товаров</h1>
     </div>
-
-    <main class="catalog-main">
-      <div class="catalog-main__items-wrapper">
+    <main class="container">
+      <div class="catalog">
         <article class="catalog-item">
           <a href="">
             <figure class="catalog-item__view">
@@ -56,7 +61,6 @@
                 <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                 <img src="img/photo-1-mobile@1x.jpg" srcset="img/img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
               </picture>
-              <!-- <img src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195" /> -->
               <figcaption class="catalog-item__name">
                 <h3>Зайчик-попрыгайчик</h3>
                 <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
@@ -98,6 +102,7 @@
         </a>
       </article>
     </div>
+    <div class="container">
       <article class="item-making">
         <video class="item-making__video" src="videofile.ogg" width="260" height="150"></video>
         <h3 class="item-making__title">Процесс производства</h3>
@@ -107,6 +112,7 @@
         </p>
         <a class="item-making__make-order btn" href="#">Сделать заказ</a>
       </article>
+    </div>
     </main>
     <div class="container container--bg-grey">
       <footer class="page-footer">
