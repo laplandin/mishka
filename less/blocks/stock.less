@@ -6,6 +6,7 @@
 }
 
 .stock__wrapper {
+  width: 320px;
   display: flex;
   flex-direction: column;
 
@@ -18,7 +19,6 @@
   }
 }
 
-
 .stock__title {
   padding: 0;
   margin: 70px 30px auto;
@@ -30,6 +30,7 @@
 
 .stock__item {
   display: block;
+  position: relative;
   min-height: 103px;
 
   padding-top: 24px;
@@ -39,10 +40,26 @@
 
   &--interior-icon {
     background-color: #63d1bb;
+
+    svg {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+
+      fill: #3bb09d;
+    }
   }
 
   &--toy-icon {
     background-color: #56c3b2;
+
+    svg {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+
+      fill: #3bb09d;
+    }
   }
 }
 

@@ -4,7 +4,6 @@
   margin: 0 auto;
 
   box-sizing: border-box;
-
 }
 
 .advantages__title {
@@ -19,9 +18,18 @@
 }
 
 .advantages__item {
+  position: relative;
   margin-top: 82px;
 
   .font(@font-bold, 17px, 21px);
+
+  svg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    fill: #3bb09d;
+  }
 }
 
 @media @tablet-widths {

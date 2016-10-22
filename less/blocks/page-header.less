@@ -1,13 +1,13 @@
 .page-header {
-  // display: flex;
-    // .container();
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #cecece;
+  height: 78px;
 }
 
 .page-header__nav {
-  // .container();
+  width: 320px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,12 @@
   .list-break();
   position: relative;
   width: 100%;
+  margin: 0 auto;
 
   display: inline-block;
   line-height: 78px;
   text-align: center;
+  border-bottom: 1px solid #cecece;
 
   box-sizing: border-box;
 
@@ -101,12 +103,14 @@
 .page-header__menu-list-catalog-knitting--opened,
 .page-header__menu-list-search-cart--opened {
   display: block;
+  background-color: white;
 }
 
 .page-header__menu-item-catalog,
 .page-header__menu-item-knitting,
 .page-header__menu-item-search,
 .page-header__menu-item-cart {
+  position: relative;
   padding-left: 75px;
   min-height: 79px;
 
@@ -123,7 +127,31 @@
   display: none;
 }
 
+.page-header__menu-item-search {
+  svg {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    fill: #d3d2d2;
+  }
+}
+
+.page-header__menu-item-cart {
+  svg {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    fill: #d3d2d2;
+  }
+}
+
 @media @tablet-widths {
+  .page-header {
+    width: 100%;
+  }
+
   .page-header__nav {
     margin: 0 auto;
     max-width: 668px;
@@ -189,8 +217,6 @@
     padding-left: 80px;
 
     border: none;
-    // border-left: 1px solid #cecece;
-
   }
 
   .page-header__menu-item-catalog,
@@ -261,6 +287,4 @@
 
     border: none;
   }
-
-
 }
