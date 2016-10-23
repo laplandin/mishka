@@ -32,4 +32,23 @@ a {
   &--bg-grey {
     background-color: #f1f1f1;
   }
+
+  &--zigzag {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 5;
+
+      display: block;
+      height: 36px;
+      width: 100%;
+
+      background: transparent url("../img/bg-zigzag-line.svg") repeat-x bottom center;
+    }
+  }
 }

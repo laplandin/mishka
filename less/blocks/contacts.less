@@ -49,7 +49,7 @@
   order: 4;
   margin-bottom: 40px;
 
-  background-color: rgba(30, 30, 30, 0.3);
+  background-color: rgba(30, 30, 30, 0.1);
 }
 
 .contacts__write-to-us {
@@ -69,16 +69,23 @@
 
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .contacts__title {
+    position: relative;
     width: 668px;
     margin: 0 auto;
     margin-bottom: 48px;
     .font(@font-bold, 43px, 50px);
 
     box-sizing: border-box;
+  }
+
+  .contacts__flag-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -20px;
   }
 
   .contacts__list {
@@ -131,6 +138,13 @@
     .font(@font-bold, 53px, 57px);
 
     box-sizing: border-box;
+  }
+
+  .contacts__flag-icon {
+    display: block;
+    position: absolute;
+    left: -110px;
+    top: -20px;
   }
 
   .contacts__list {
